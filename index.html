@@ -1,36 +1,29 @@
 ﻿<!DOCTYPE html>
+<!-- Version: 1.0.1 - Force Vercel Update -->
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="实时查询全球特价机票，比较多平台价格，查看历史价格趋势，找到最便宜的机票">
   <meta name="keywords" content="特价机票,机票比价,实时机票价格,机票搜索,便宜机票">
-
   <!-- WeChat/Mobile Optimization -->
   <meta name="format-detection" content="telephone=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
   <!-- Open Graph for sharing -->
   <meta property="og:title" content="特价机票实时显示系统">
   <meta property="og:description" content="实时查询全球特价机票，比较多平台价格">
   <meta property="og:type" content="website">
-
   <title>特价机票实时显示系统</title>
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
-
   <!-- Chart.js for price trends -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
-
 <body>
   <!-- Header -->
   <header class="header">
@@ -39,16 +32,13 @@
       <p class="header-subtitle">实时比价 · 找到最便宜的机票</p>
     </div>
   </header>
-
   <!-- Main Content -->
   <main class="main-content">
     <div class="container">
-
       <!-- Search Form -->
       <section class="search-section">
         <div class="card card-glass">
           <h2 class="section-title">搜索航班</h2>
-
           <form id="searchForm" class="search-form">
             <div class="form-row">
               <!-- Origin Input -->
@@ -58,7 +48,6 @@
                   required>
                 <div id="originDropdown" class="autocomplete-dropdown"></div>
               </div>
-
               <!-- Destination Input -->
               <div class="input-group autocomplete-wrapper">
                 <label for="destination" class="input-label">目的地</label>
@@ -67,14 +56,12 @@
                 <div id="destinationDropdown" class="autocomplete-dropdown"></div>
               </div>
             </div>
-
             <div class="form-row">
               <!-- Date Input -->
               <div class="input-group">
                 <label for="date" class="input-label">出发日期</label>
                 <input type="date" id="date" class="input" required>
               </div>
-
               <!-- Search Button -->
               <div class="input-group">
                 <label class="input-label">&nbsp;</label>
@@ -89,10 +76,8 @@
           </form>
         </div>
       </section>
-
       <!-- Results Section -->
       <section id="resultsSection" class="results-section hidden">
-
         <!-- Lowest Price Highlight -->
         <div id="lowestPriceCard" class="card card-highlight fade-in">
           <div class="lowest-price-content">
@@ -102,7 +87,6 @@
             <button class="btn btn-primary mt-4" id="bookNowBtn">立即预订</button>
           </div>
         </div>
-
         <!-- Price Trend Chart -->
         <div class="card mt-6 fade-in">
           <h3 class="section-title">30天价格趋势</h3>
@@ -111,7 +95,6 @@
           </div>
           <div id="historicalLowPrice" class="historical-low-info mt-4"></div>
         </div>
-
         <!-- Flight List -->
         <div class="card mt-6 fade-in">
           <div class="flex items-center justify-space-between mb-4">
@@ -122,9 +105,7 @@
           </div>
           <div id="flightList" class="flight-list"></div>
         </div>
-
       </section>
-
       <!-- Loading State -->
       <section id="loadingSection" class="loading-section hidden">
         <div class="card">
@@ -133,7 +114,6 @@
             <p class="loading-text">正在搜索最优惠的航班...</p>
           </div>
         </div>
-
         <!-- Skeleton Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6">
           <div class="card skeleton-card">
@@ -147,7 +127,6 @@
           </div>
         </div>
       </section>
-
       <!-- Error State -->
       <section id="errorSection" class="error-section hidden">
         <div class="card card-error">
@@ -159,10 +138,8 @@
           </div>
         </div>
       </section>
-
     </div>
   </main>
-
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -178,16 +155,14 @@
       </script>
     </div>
   </footer>
-
   <!-- Scripts -->
-  <script src="config.js"></script>
-  <script src="api/airports.js"></script>
-  <script src="api/mock-data.js"></script>
-  <script src="components/search-form.js"></script>
-  <script src="components/price-card.js"></script>
-  <script src="components/trend-chart.js"></script>
-  <script src="app.js"></script>
-  <script src="components/ai-chat.js"></script>
+  <script src="./config.js" defer></script>
+  <script src="./api/airports.js" defer></script>
+  <script src="./api/mock-data.js" defer></script>
+  <script src="./components/search-form.js" defer></script>
+  <script src="./components/price-card.js" defer></script>
+  <script src="./components/trend-chart.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./components/ai-chat.js" defer></script>
 </body>
-
 </html>
