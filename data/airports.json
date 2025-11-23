@@ -1,0 +1,331 @@
+[
+  {
+    "code": "PEK",
+    "name": "Beijing Capital International Airport",
+    "city": "北京",
+    "cityEn": "Beijing",
+    "country": "CN"
+  },
+  {
+    "code": "PVG",
+    "name": "Shanghai Pudong International Airport",
+    "city": "上海",
+    "cityEn": "Shanghai",
+    "country": "CN"
+  },
+  {
+    "code": "SHA",
+    "name": "Shanghai Hongqiao International Airport",
+    "city": "上海",
+    "cityEn": "Shanghai",
+    "country": "CN"
+  },
+  {
+    "code": "CAN",
+    "name": "Guangzhou Baiyun International Airport",
+    "city": "广州",
+    "cityEn": "Guangzhou",
+    "country": "CN"
+  },
+  {
+    "code": "SZX",
+    "name": "Shenzhen Bao'an International Airport",
+    "city": "深圳",
+    "cityEn": "Shenzhen",
+    "country": "CN"
+  },
+  {
+    "code": "CTU",
+    "name": "Chengdu Shuangliu International Airport",
+    "city": "成都",
+    "cityEn": "Chengdu",
+    "country": "CN"
+  },
+  {
+    "code": "HGH",
+    "name": "Hangzhou Xiaoshan International Airport",
+    "city": "杭州",
+    "cityEn": "Hangzhou",
+    "country": "CN"
+  },
+  {
+    "code": "XIY",
+    "name": "Xi'an Xianyang International Airport",
+    "city": "西安",
+    "cityEn": "Xi'an",
+    "country": "CN"
+  },
+  {
+    "code": "KMG",
+    "name": "Kunming Changshui International Airport",
+    "city": "昆明",
+    "cityEn": "Kunming",
+    "country": "CN"
+  },
+  {
+    "code": "NKG",
+    "name": "Nanjing Lukou International Airport",
+    "city": "南京",
+    "cityEn": "Nanjing",
+    "country": "CN"
+  },
+  {
+    "code": "WUH",
+    "name": "Wuhan Tianhe International Airport",
+    "city": "武汉",
+    "cityEn": "Wuhan",
+    "country": "CN"
+  },
+  {
+    "code": "CSX",
+    "name": "Changsha Huanghua International Airport",
+    "city": "长沙",
+    "cityEn": "Changsha",
+    "country": "CN"
+  },
+  {
+    "code": "HRB",
+    "name": "Harbin Taiping International Airport",
+    "city": "哈尔滨",
+    "cityEn": "Harbin",
+    "country": "CN"
+  },
+  {
+    "code": "DLC",
+    "name": "Dalian Zhoushuizi International Airport",
+    "city": "大连",
+    "cityEn": "Dalian",
+    "country": "CN"
+  },
+  {
+    "code": "TAO",
+    "name": "Qingdao Liuting International Airport",
+    "city": "青岛",
+    "cityEn": "Qingdao",
+    "country": "CN"
+  },
+  {
+    "code": "TSN",
+    "name": "Tianjin Binhai International Airport",
+    "city": "天津",
+    "cityEn": "Tianjin",
+    "country": "CN"
+  },
+  {
+    "code": "NNG",
+    "name": "Nanning Wuxu International Airport",
+    "city": "南宁",
+    "cityEn": "Nanning",
+    "country": "CN"
+  },
+  {
+    "code": "SYX",
+    "name": "Sanya Phoenix International Airport",
+    "city": "三亚",
+    "cityEn": "Sanya",
+    "country": "CN"
+  },
+  {
+    "code": "HAK",
+    "name": "Haikou Meilan International Airport",
+    "city": "海口",
+    "cityEn": "Haikou",
+    "country": "CN"
+  },
+  {
+    "code": "FOC",
+    "name": "Fuzhou Changle International Airport",
+    "city": "福州",
+    "cityEn": "Fuzhou",
+    "country": "CN"
+  },
+  {
+    "code": "XMN",
+    "name": "Xiamen Gaoqi International Airport",
+    "city": "厦门",
+    "cityEn": "Xiamen",
+    "country": "CN"
+  },
+  {
+    "code": "HKG",
+    "name": "Hong Kong International Airport",
+    "city": "香港",
+    "cityEn": "Hong Kong",
+    "country": "HK"
+  },
+  {
+    "code": "TPE",
+    "name": "Taiwan Taoyuan International Airport",
+    "city": "台北",
+    "cityEn": "Taipei",
+    "country": "TW"
+  },
+  {
+    "code": "NRT",
+    "name": "Narita International Airport",
+    "city": "东京",
+    "cityEn": "Tokyo",
+    "country": "JP"
+  },
+  {
+    "code": "HND",
+    "name": "Tokyo Haneda Airport",
+    "city": "东京",
+    "cityEn": "Tokyo",
+    "country": "JP"
+  },
+  {
+    "code": "KIX",
+    "name": "Kansai International Airport",
+    "city": "大阪",
+    "cityEn": "Osaka",
+    "country": "JP"
+  },
+  {
+    "code": "ICN",
+    "name": "Incheon International Airport",
+    "city": "首尔",
+    "cityEn": "Seoul",
+    "country": "KR"
+  },
+  {
+    "code": "SIN",
+    "name": "Singapore Changi Airport",
+    "city": "新加坡",
+    "cityEn": "Singapore",
+    "country": "SG"
+  },
+  {
+    "code": "BKK",
+    "name": "Suvarnabhumi Airport",
+    "city": "曼谷",
+    "cityEn": "Bangkok",
+    "country": "TH"
+  },
+  {
+    "code": "KUL",
+    "name": "Kuala Lumpur International Airport",
+    "city": "吉隆坡",
+    "cityEn": "Kuala Lumpur",
+    "country": "MY"
+  },
+  {
+    "code": "MNL",
+    "name": "Ninoy Aquino International Airport",
+    "city": "马尼拉",
+    "cityEn": "Manila",
+    "country": "PH"
+  },
+  {
+    "code": "CGK",
+    "name": "Soekarno-Hatta International Airport",
+    "city": "雅加达",
+    "cityEn": "Jakarta",
+    "country": "ID"
+  },
+  {
+    "code": "SYD",
+    "name": "Sydney Kingsford Smith Airport",
+    "city": "悉尼",
+    "cityEn": "Sydney",
+    "country": "AU"
+  },
+  {
+    "code": "MEL",
+    "name": "Melbourne Airport",
+    "city": "墨尔本",
+    "cityEn": "Melbourne",
+    "country": "AU"
+  },
+  {
+    "code": "LAX",
+    "name": "Los Angeles International Airport",
+    "city": "洛杉矶",
+    "cityEn": "Los Angeles",
+    "country": "US"
+  },
+  {
+    "code": "SFO",
+    "name": "San Francisco International Airport",
+    "city": "旧金山",
+    "cityEn": "San Francisco",
+    "country": "US"
+  },
+  {
+    "code": "JFK",
+    "name": "John F. Kennedy International Airport",
+    "city": "纽约",
+    "cityEn": "New York",
+    "country": "US"
+  },
+  {
+    "code": "ORD",
+    "name": "O'Hare International Airport",
+    "city": "芝加哥",
+    "cityEn": "Chicago",
+    "country": "US"
+  },
+  {
+    "code": "SEA",
+    "name": "Seattle-Tacoma International Airport",
+    "city": "西雅图",
+    "cityEn": "Seattle",
+    "country": "US"
+  },
+  {
+    "code": "YVR",
+    "name": "Vancouver International Airport",
+    "city": "温哥华",
+    "cityEn": "Vancouver",
+    "country": "CA"
+  },
+  {
+    "code": "YYZ",
+    "name": "Toronto Pearson International Airport",
+    "city": "多伦多",
+    "cityEn": "Toronto",
+    "country": "CA"
+  },
+  {
+    "code": "LHR",
+    "name": "London Heathrow Airport",
+    "city": "伦敦",
+    "cityEn": "London",
+    "country": "GB"
+  },
+  {
+    "code": "CDG",
+    "name": "Charles de Gaulle Airport",
+    "city": "巴黎",
+    "cityEn": "Paris",
+    "country": "FR"
+  },
+  {
+    "code": "FRA",
+    "name": "Frankfurt Airport",
+    "city": "法兰克福",
+    "cityEn": "Frankfurt",
+    "country": "DE"
+  },
+  {
+    "code": "AMS",
+    "name": "Amsterdam Airport Schiphol",
+    "city": "阿姆斯特丹",
+    "cityEn": "Amsterdam",
+    "country": "NL"
+  },
+  {
+    "code": "DXB",
+    "name": "Dubai International Airport",
+    "city": "迪拜",
+    "cityEn": "Dubai",
+    "country": "AE"
+  },
+  {
+    "code": "DOH",
+    "name": "Hamad International Airport",
+    "city": "多哈",
+    "cityEn": "Doha",
+    "country": "QA"
+  }
+]

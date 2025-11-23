@@ -1,0 +1,1197 @@
+:root {
+    /* Color Palette - Vibrant & Modern */
+    --primary-hue: 220;
+    --primary-sat: 90%;
+    --primary-light: 55%;
+
+    --primary-50: hsl(var(--primary-hue), var(--primary-sat), 95%);
+    --primary-100: hsl(var(--primary-hue), var(--primary-sat), 85%);
+    --primary-200: hsl(var(--primary-hue), var(--primary-sat), 75%);
+    --primary-300: hsl(var(--primary-hue), var(--primary-sat), 65%);
+    --primary-400: hsl(var(--primary-hue), var(--primary-sat), 60%);
+    --primary-500: hsl(var(--primary-hue), var(--primary-sat), var(--primary-light));
+    --primary-600: hsl(var(--primary-hue), var(--primary-sat), 45%);
+    --primary-700: hsl(var(--primary-hue), var(--primary-sat), 35%);
+    --primary-800: hsl(var(--primary-hue), var(--primary-sat), 25%);
+    --primary-900: hsl(var(--primary-hue), var(--primary-sat), 15%);
+
+    --accent-hue: 280;
+    --accent-sat: 85%;
+    --accent-light: 60%;
+
+    --accent-400: hsl(var(--accent-hue), var(--accent-sat), 65%);
+    --accent-500: hsl(var(--accent-hue), var(--accent-sat), var(--accent-light));
+    --accent-600: hsl(var(--accent-hue), var(--accent-sat), 50%);
+
+    --success-500: hsl(145, 70%, 50%);
+    --warning-500: hsl(35, 90%, 55%);
+    --error-500: hsl(0, 80%, 60%);
+
+    /* Neutral Colors */
+    --gray-50: hsl(220, 20%, 98%);
+    --gray-100: hsl(220, 15%, 95%);
+    --gray-200: hsl(220, 15%, 90%);
+    --gray-300: hsl(220, 12%, 80%);
+    --gray-400: hsl(220, 10%, 65%);
+    --gray-500: hsl(220, 8%, 50%);
+    --gray-600: hsl(220, 10%, 40%);
+    --gray-700: hsl(220, 12%, 30%);
+    --gray-800: hsl(220, 15%, 20%);
+    --gray-900: hsl(220, 18%, 12%);
+
+    /* Semantic Colors */
+    --bg-primary: var(--gray-50);
+    --bg-secondary: white;
+    --bg-tertiary: var(--gray-100);
+    --text-primary: var(--gray-900);
+    --text-secondary: var(--gray-600);
+    --text-tertiary: var(--gray-500);
+    --border-color: var(--gray-200);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Z-index */
+    --z-dropdown: 1000;
+    --z-modal: 1050;
+    --z-tooltip: 1100;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: var(--gray-900);
+        --bg-secondary: var(--gray-800);
+        --bg-tertiary: var(--gray-700);
+        --text-primary: var(--gray-50);
+        --text-secondary: var(--gray-300);
+        --text-tertiary: var(--gray-400);
+        --border-color: var(--gray-700);
+        --shadow-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Reset & Base Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    min-height: 100vh;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-4);
+}
+
+h1 {
+    font-size: var(--font-size-4xl);
+}
+
+h2 {
+    font-size: var(--font-size-3xl);
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+}
+
+h5 {
+    font-size: var(--font-size-lg);
+}
+
+h6 {
+    font-size: var(--font-size-base);
+}
+
+p {
+    margin-bottom: var(--space-4);
+}
+
+a {
+    color: var(--primary-500);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-600);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 var(--space-6);
+    }
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+    user-select: none;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    border-color: var(--primary-500);
+    color: var(--primary-500);
+}
+
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-lg);
+}
+
+.btn-sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+}
+
+/* Cards */
+.card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+    .card-glass {
+        background: rgba(30, 30, 40, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: var(--space-6);
+}
+
+.input-label {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+}
+
+.input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* Autocomplete Dropdown */
+.autocomplete-wrapper {
+    position: relative;
+}
+
+.autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: var(--space-2);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: var(--z-dropdown);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all var(--transition-fast);
+}
+
+.autocomplete-dropdown.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.autocomplete-item {
+    padding: var(--space-3) var(--space-4);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.autocomplete-item:hover,
+.autocomplete-item.selected {
+    background: var(--bg-tertiary);
+}
+
+.autocomplete-item-primary {
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+}
+
+.autocomplete-item-secondary {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-top: var(--space-1);
+}
+
+/* Loading States */
+.skeleton {
+    background: linear-gradient(90deg,
+            var(--gray-200) 25%,
+            var(--gray-100) 50%,
+            var(--gray-200) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: var(--radius-md);
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--gray-200);
+    border-top-color: var(--primary-500);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mt-1 {
+    margin-top: var(--space-1);
+}
+
+.mt-2 {
+    margin-top: var(--space-2);
+}
+
+.mt-3 {
+    margin-top: var(--space-3);
+}
+
+.mt-4 {
+    margin-top: var(--space-4);
+}
+
+.mt-6 {
+    margin-top: var(--space-6);
+}
+
+.mt-8 {
+    margin-top: var(--space-8);
+}
+
+.mb-1 {
+    margin-bottom: var(--space-1);
+}
+
+.mb-2 {
+    margin-bottom: var(--space-2);
+}
+
+.mb-3 {
+    margin-bottom: var(--space-3);
+}
+
+.mb-4 {
+    margin-bottom: var(--space-4);
+}
+
+.mb-6 {
+    margin-bottom: var(--space-6);
+}
+
+.mb-8 {
+    margin-bottom: var(--space-8);
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-2 {
+    gap: var(--space-2);
+}
+
+.gap-4 {
+    gap: var(--space-4);
+}
+
+/* Responsive Grid */
+.grid {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn var(--transition-base) ease-out;
+}
+
+/* ============================================
+   APPLICATION-SPECIFIC STYLES
+   ============================================ */
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
+    color: white;
+    padding: var(--space-8) 0;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.header-title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-subtitle {
+    font-size: var(--font-size-lg);
+    opacity: 0.95;
+    margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    .header-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .header-subtitle {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Main Content */
+.main-content {
+    padding: var(--space-8) 0;
+    min-height: 60vh;
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: var(--space-8);
+}
+
+.section-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-6);
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* Lowest Price Highlight Card */
+.card-highlight {
+    background: linear-gradient(135deg, var(--primary-50), var(--accent-50));
+    border: 2px solid var(--primary-200);
+    text-align: center;
+    padding: var(--space-8);
+}
+
+@media (prefers-color-scheme: dark) {
+    .card-highlight {
+        background: linear-gradient(135deg, var(--primary-900), var(--accent-900));
+        border-color: var(--primary-700);
+    }
+}
+
+.lowest-price-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.lowest-price-label {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.lowest-price-amount {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-600);
+    margin-bottom: var(--space-4);
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .lowest-price-amount {
+        font-size: var(--font-size-4xl);
+    }
+}
+
+.lowest-price-details {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: var(--space-4) 0;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 400px;
+    }
+}
+
+.historical-low-info {
+    padding: var(--space-4);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.historical-low-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-1);
+}
+
+.historical-low-price {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--success-500);
+}
+
+.historical-low-date {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+    margin-top: var(--space-1);
+}
+
+/* Flight List */
+.flight-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.flight-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+}
+
+.flight-card:hover {
+    border-color: var(--primary-300);
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+@media (min-width: 768px) {
+    .flight-card {
+        grid-template-columns: 2fr 1fr auto;
+        align-items: center;
+    }
+}
+
+.flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.flight-airline {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+}
+
+.flight-number {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.flight-route {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--font-size-base);
+    color: var(--text-primary);
+}
+
+.flight-time {
+    font-weight: var(--font-weight-medium);
+}
+
+.flight-arrow {
+    color: var(--text-tertiary);
+}
+
+.flight-duration {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.flight-stops {
+    display: inline-block;
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--font-size-xs);
+    background: var(--warning-500);
+    color: white;
+    border-radius: var(--radius-sm);
+    margin-left: var(--space-2);
+}
+
+.flight-stops.direct {
+    background: var(--success-500);
+}
+
+.flight-price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+}
+
+@media (min-width: 768px) {
+    .flight-price-section {
+        align-items: flex-end;
+    }
+}
+
+.flight-price {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-600);
+    line-height: 1;
+}
+
+.flight-source {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+.flight-book-btn {
+    padding: var(--space-3) var(--space-6);
+    white-space: nowrap;
+}
+
+/* Loading Section */
+.loading-section,
+.error-section {
+    padding: var(--space-12) 0;
+}
+
+.loading-content,
+.error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-8);
+}
+
+.loading-text {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.skeleton-card {
+    pointer-events: none;
+}
+
+/* Error Section */
+.card-error {
+    border: 2px solid var(--error-500);
+}
+
+.error-icon {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--space-2);
+}
+
+.error-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--error-500);
+    margin-bottom: var(--space-2);
+}
+
+.error-message {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    text-align: center;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    background: var(--bg-tertiary);
+    padding: var(--space-8) 0;
+    margin-top: var(--space-12);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-text {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+}
+
+.footer-text:last-child {
+    margin-bottom: 0;
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .main-content {
+        padding: var(--space-6) 0;
+    }
+
+    .search-section {
+        margin-bottom: var(--space-6);
+    }
+
+    .card {
+        padding: var(--space-4);
+    }
+
+    .section-title {
+        font-size: var(--font-size-xl);
+    }
+}/ *   A I   C u s t o m e r   S e r v i c e   C h a t   W i d g e t   S t y l e s   * /  
+  
+ / *   F l o a t i n g   C h a t   B u t t o n   * /  
+ . a i - c h a t - b u t t o n   {  
+         p o s i t i o n :   f i x e d ;  
+         b o t t o m :   2 4 p x ;  
+         r i g h t :   2 4 p x ;  
+         d i s p l a y :   f l e x ;  
+         a l i g n - i t e m s :   c e n t e r ;  
+         g a p :   v a r ( - - s p a c e - 2 ) ;  
+         p a d d i n g :   v a r ( - - s p a c e - 4 )   v a r ( - - s p a c e - 5 ) ;  
+         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 3 5 d e g ,   v a r ( - - p r i m a r y - 5 0 0 ) ,   v a r ( - - a c c e n t - 5 0 0 ) ) ;  
+         c o l o r :   w h i t e ;  
+         b o r d e r :   n o n e ;  
+         b o r d e r - r a d i u s :   v a r ( - - r a d i u s - f u l l ) ;  
+         b o x - s h a d o w :   v a r ( - - s h a d o w - x l ) ;  
+         c u r s o r :   p o i n t e r ;  
+         t r a n s i t i o n :   a l l   v a r ( - - t r a n s i t i o n - b a s e ) ;  
+         z - i n d e x :   1 0 0 0 ;  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - b a s e ) ;  
+         f o n t - w e i g h t :   v a r ( - - f o n t - w e i g h t - m e d i u m ) ;  
+ }  
+  
+ . a i - c h a t - b u t t o n : h o v e r   {  
+         t r a n s f o r m :   t r a n s l a t e Y ( - 4 p x ) ;  
+         b o x - s h a d o w :   0   2 0 p x   4 0 p x   r g b a ( 0 ,   0 ,   0 ,   0 . 3 ) ;  
+ }  
+  
+ . a i - c h a t - i c o n   {  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - 2 x l ) ;  
+         a n i m a t i o n :   b o u n c e   2 s   i n f i n i t e ;  
+ }  
+  
+ @ k e y f r a m e s   b o u n c e   {  
+  
+         0 % ,  
+         1 0 0 %   {  
+                 t r a n s f o r m :   t r a n s l a t e Y ( 0 ) ;  
+         }  
+  
+         5 0 %   {  
+                 t r a n s f o r m :   t r a n s l a t e Y ( - 4 p x ) ;  
+         }  
+ }  
+  
+ / *   C h a t   B o x   * /  
+ . a i - c h a t - b o x   {  
+         p o s i t i o n :   f i x e d ;  
+         b o t t o m :   1 0 0 p x ;  
+         r i g h t :   2 4 p x ;  
+         w i d t h :   3 8 0 p x ;  
+         m a x - w i d t h :   c a l c ( 1 0 0 v w   -   4 8 p x ) ;  
+         h e i g h t :   6 0 0 p x ;  
+         m a x - h e i g h t :   c a l c ( 1 0 0 v h   -   1 5 0 p x ) ;  
+         b a c k g r o u n d :   v a r ( - - b g - s e c o n d a r y ) ;  
+         b o r d e r - r a d i u s :   v a r ( - - r a d i u s - x l ) ;  
+         b o x - s h a d o w :   v a r ( - - s h a d o w - 2 x l ) ;  
+         d i s p l a y :   f l e x ;  
+         f l e x - d i r e c t i o n :   c o l u m n ;  
+         z - i n d e x :   1 0 0 1 ;  
+         o v e r f l o w :   h i d d e n ;  
+         t r a n s i t i o n :   a l l   v a r ( - - t r a n s i t i o n - b a s e ) ;  
+ }  
+  
+ . a i - c h a t - b o x . h i d d e n   {  
+         o p a c i t y :   0 ;  
+         t r a n s f o r m :   t r a n s l a t e Y ( 2 0 p x )   s c a l e ( 0 . 9 5 ) ;  
+         p o i n t e r - e v e n t s :   n o n e ;  
+ }  
+  
+ / *   C h a t   H e a d e r   * /  
+ . a i - c h a t - h e a d e r   {  
+         d i s p l a y :   f l e x ;  
+         a l i g n - i t e m s :   c e n t e r ;  
+         j u s t i f y - c o n t e n t :   s p a c e - b e t w e e n ;  
+         p a d d i n g :   v a r ( - - s p a c e - 4 ) ;  
+         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 3 5 d e g ,   v a r ( - - p r i m a r y - 6 0 0 ) ,   v a r ( - - a c c e n t - 6 0 0 ) ) ;  
+         c o l o r :   w h i t e ;  
+ }  
+  
+ . a i - c h a t - h e a d e r - c o n t e n t   {  
+         d i s p l a y :   f l e x ;  
+         a l i g n - i t e m s :   c e n t e r ;  
+         g a p :   v a r ( - - s p a c e - 3 ) ;  
+ }  
+  
+ . a i - c h a t - a v a t a r   {  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - 3 x l ) ;  
+ }  
+  
+ . a i - c h a t - t i t l e   {  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - l g ) ;  
+         f o n t - w e i g h t :   v a r ( - - f o n t - w e i g h t - s e m i b o l d ) ;  
+ }  
+  
+ . a i - c h a t - s t a t u s   {  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - x s ) ;  
+         o p a c i t y :   0 . 9 ;  
+ }  
+  
+ . a i - c h a t - c l o s e   {  
+         b a c k g r o u n d :   n o n e ;  
+         b o r d e r :   n o n e ;  
+         c o l o r :   w h i t e ;  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - 2 x l ) ;  
+         c u r s o r :   p o i n t e r ;  
+         p a d d i n g :   v a r ( - - s p a c e - 2 ) ;  
+         l i n e - h e i g h t :   1 ;  
+         t r a n s i t i o n :   o p a c i t y   v a r ( - - t r a n s i t i o n - f a s t ) ;  
+ }  
+  
+ . a i - c h a t - c l o s e : h o v e r   {  
+         o p a c i t y :   0 . 8 ;  
+ }  
+  
+ / *   M e s s a g e s   A r e a   * /  
+ . a i - c h a t - m e s s a g e s   {  
+         f l e x :   1 ;  
+         o v e r f l o w - y :   a u t o ;  
+         p a d d i n g :   v a r ( - - s p a c e - 4 ) ;  
+         d i s p l a y :   f l e x ;  
+         f l e x - d i r e c t i o n :   c o l u m n ;  
+         g a p :   v a r ( - - s p a c e - 4 ) ;  
+ }  
+  
+ . a i - m e s s a g e ,  
+ . u s e r - m e s s a g e   {  
+         d i s p l a y :   f l e x ;  
+         g a p :   v a r ( - - s p a c e - 2 ) ;  
+         a n i m a t i o n :   f a d e I n   v a r ( - - t r a n s i t i o n - b a s e ) ;  
+ }  
+  
+ . u s e r - m e s s a g e   {  
+         f l e x - d i r e c t i o n :   r o w - r e v e r s e ;  
+ }  
+  
+ . a i - m e s s a g e - a v a t a r ,  
+ . u s e r - m e s s a g e - a v a t a r   {  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - 2 x l ) ;  
+         f l e x - s h r i n k :   0 ;  
+ }  
+  
+ . a i - m e s s a g e - c o n t e n t ,  
+ . u s e r - m e s s a g e - c o n t e n t   {  
+         m a x - w i d t h :   7 5 % ;  
+ }  
+  
+ . a i - m e s s a g e - t e x t ,  
+ . u s e r - m e s s a g e - t e x t   {  
+         p a d d i n g :   v a r ( - - s p a c e - 3 )   v a r ( - - s p a c e - 4 ) ;  
+         b o r d e r - r a d i u s :   v a r ( - - r a d i u s - l g ) ;  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - s m ) ;  
+         l i n e - h e i g h t :   v a r ( - - l i n e - h e i g h t - r e l a x e d ) ;  
+ }  
+  
+ . a i - m e s s a g e - t e x t   {  
+         b a c k g r o u n d :   v a r ( - - b g - t e r t i a r y ) ;  
+         c o l o r :   v a r ( - - t e x t - p r i m a r y ) ;  
+         b o r d e r - b o t t o m - l e f t - r a d i u s :   v a r ( - - r a d i u s - s m ) ;  
+ }  
+  
+ . u s e r - m e s s a g e - t e x t   {  
+         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 3 5 d e g ,   v a r ( - - p r i m a r y - 5 0 0 ) ,   v a r ( - - a c c e n t - 5 0 0 ) ) ;  
+         c o l o r :   w h i t e ;  
+         b o r d e r - b o t t o m - r i g h t - r a d i u s :   v a r ( - - r a d i u s - s m ) ;  
+ }  
+  
+ . a i - m e s s a g e - t i m e ,  
+ . u s e r - m e s s a g e - t i m e   {  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - x s ) ;  
+         c o l o r :   v a r ( - - t e x t - t e r t i a r y ) ;  
+         m a r g i n - t o p :   v a r ( - - s p a c e - 1 ) ;  
+         p a d d i n g :   0   v a r ( - - s p a c e - 2 ) ;  
+ }  
+  
+ / *   Q u i c k   R e p l i e s   * /  
+ . a i - c h a t - q u i c k - r e p l i e s   {  
+         d i s p l a y :   f l e x ;  
+         f l e x - w r a p :   w r a p ;  
+         g a p :   v a r ( - - s p a c e - 2 ) ;  
+         p a d d i n g :   v a r ( - - s p a c e - 3 )   v a r ( - - s p a c e - 4 ) ;  
+         b o r d e r - t o p :   1 p x   s o l i d   v a r ( - - b o r d e r - c o l o r ) ;  
+ }  
+  
+ . a i - q u i c k - r e p l y   {  
+         p a d d i n g :   v a r ( - - s p a c e - 2 )   v a r ( - - s p a c e - 3 ) ;  
+         b a c k g r o u n d :   v a r ( - - b g - t e r t i a r y ) ;  
+         b o r d e r :   1 p x   s o l i d   v a r ( - - b o r d e r - c o l o r ) ;  
+         b o r d e r - r a d i u s :   v a r ( - - r a d i u s - f u l l ) ;  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - x s ) ;  
+         c o l o r :   v a r ( - - t e x t - p r i m a r y ) ;  
+         c u r s o r :   p o i n t e r ;  
+         t r a n s i t i o n :   a l l   v a r ( - - t r a n s i t i o n - f a s t ) ;  
+ }  
+  
+ . a i - q u i c k - r e p l y : h o v e r   {  
+         b a c k g r o u n d :   v a r ( - - p r i m a r y - 5 0 ) ;  
+         b o r d e r - c o l o r :   v a r ( - - p r i m a r y - 3 0 0 ) ;  
+         c o l o r :   v a r ( - - p r i m a r y - 6 0 0 ) ;  
+ }  
+  
+ / *   I n p u t   A r e a   * /  
+ . a i - c h a t - i n p u t - a r e a   {  
+         d i s p l a y :   f l e x ;  
+         g a p :   v a r ( - - s p a c e - 2 ) ;  
+         p a d d i n g :   v a r ( - - s p a c e - 4 ) ;  
+         b o r d e r - t o p :   1 p x   s o l i d   v a r ( - - b o r d e r - c o l o r ) ;  
+         b a c k g r o u n d :   v a r ( - - b g - s e c o n d a r y ) ;  
+ }  
+  
+ . a i - c h a t - i n p u t   {  
+         f l e x :   1 ;  
+         p a d d i n g :   v a r ( - - s p a c e - 3 ) ;  
+         b o r d e r :   1 p x   s o l i d   v a r ( - - b o r d e r - c o l o r ) ;  
+         b o r d e r - r a d i u s :   v a r ( - - r a d i u s - l g ) ;  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - s m ) ;  
+         f o n t - f a m i l y :   v a r ( - - f o n t - f a m i l y ) ;  
+         c o l o r :   v a r ( - - t e x t - p r i m a r y ) ;  
+         b a c k g r o u n d :   v a r ( - - b g - p r i m a r y ) ;  
+         t r a n s i t i o n :   b o r d e r - c o l o r   v a r ( - - t r a n s i t i o n - f a s t ) ;  
+ }  
+  
+ . a i - c h a t - i n p u t : f o c u s   {  
+         o u t l i n e :   n o n e ;  
+         b o r d e r - c o l o r :   v a r ( - - p r i m a r y - 5 0 0 ) ;  
+ }  
+  
+ . a i - c h a t - s e n d   {  
+         p a d d i n g :   v a r ( - - s p a c e - 3 )   v a r ( - - s p a c e - 4 ) ;  
+         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 3 5 d e g ,   v a r ( - - p r i m a r y - 5 0 0 ) ,   v a r ( - - a c c e n t - 5 0 0 ) ) ;  
+         c o l o r :   w h i t e ;  
+         b o r d e r :   n o n e ;  
+         b o r d e r - r a d i u s :   v a r ( - - r a d i u s - l g ) ;  
+         f o n t - s i z e :   v a r ( - - f o n t - s i z e - l g ) ;  
+         c u r s o r :   p o i n t e r ;  
+         t r a n s i t i o n :   a l l   v a r ( - - t r a n s i t i o n - b a s e ) ;  
+ }  
+  
+ . a i - c h a t - s e n d : h o v e r   {  
+         t r a n s f o r m :   t r a n s l a t e X ( 2 p x ) ;  
+ }  
+  
+ . a i - c h a t - s e n d : d i s a b l e d   {  
+         o p a c i t y :   0 . 5 ;  
+         c u r s o r :   n o t - a l l o w e d ;  
+ }  
+  
+ / *   M o b i l e   R e s p o n s i v e   * /  
+ @ m e d i a   ( m a x - w i d t h :   6 4 0 p x )   {  
+         . a i - c h a t - b u t t o n   {  
+                 b o t t o m :   1 6 p x ;  
+                 r i g h t :   1 6 p x ;  
+         }  
+  
+         . a i - c h a t - b o x   {  
+                 b o t t o m :   8 0 p x ;  
+                 r i g h t :   1 6 p x ;  
+                 l e f t :   1 6 p x ;  
+                 w i d t h :   a u t o ;  
+         }  
+  
+         . a i - c h a t - t e x t   {  
+                 d i s p l a y :   n o n e ;  
+         }  
+ }  
+ 
